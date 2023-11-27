@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/themesberg/flowbite-react-icons.git"
+    "url": "git+https://github.com/themesberg/flowbite-react-icons.git"
   },
   "keywords": [
     "flowbite",
