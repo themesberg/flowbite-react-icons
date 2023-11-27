@@ -1,0 +1,10 @@
+export { default as AdressBookOutline } from "./adress-book";
+export { default as ProfileCardOutline } from "./profile-card";
+export { default as UserAddOutline } from "./user-add";
+export { default as UserCircleOutline } from "./user-circle";
+export { default as UserEditOutline } from "./user-edit";
+export { default as UserRemoveOutline } from "./user-remove";
+export { default as UserSettingsOutline } from "./user-settings";
+export { default as UserOutline } from "./user";
+export { default as UsersGroupOutline } from "./users-group";
+export { default as UsersOutline } from "./users";

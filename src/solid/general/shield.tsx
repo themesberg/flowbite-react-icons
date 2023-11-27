@@ -1,0 +1,20 @@
+import type { SVGProps } from "react";
+import { Ref, forwardRef } from "react";
+
+const SvgShield = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 16 18"
+    ref={ref}
+    {...props}
+  >
+    <path
+      fill="#2F2F38"
+      d="M8 18A18.55 18.55 0 0 1 0 3l8-3 8 3a18.549 18.549 0 0 1-8 15"
+    />
+  </svg>
+);
+
+const ForwardRef = forwardRef(SvgShield);
+export default ForwardRef;

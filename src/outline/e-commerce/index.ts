@@ -1,0 +1,15 @@
+export { default as CartOutline } from "./cart";
+export { default as CartPlusOutline } from "./cart-plus";
+export { default as CartPlusAltOutline } from "./cart-plus-alt";
+export { default as CashOutline } from "./cash";
+export { default as CreditCardOutline } from "./credit-card";
+export { default as DollarOutline } from "./dollar";
+export { default as EuroOutline } from "./euro";
+export { default as ReceiptOutline } from "./receipt";
+export { default as SalePercentOutline } from "./sale-percent";
+export { default as ScaleBalancedOutline } from "./scale-balanced";
+export { default as ShoppingBagOutline } from "./shopping-bag";
+export { default as StoreOutline } from "./store";
+export { default as TagOutline } from "./tag";
+export { default as UserHeadsetOutline } from "./user-headset";
+export { default as WalletOutline } from "./wallet";

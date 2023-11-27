@@ -1,0 +1,10 @@
+export { default as AddressCardSolid } from "./address-card";
+export { default as AdressBookSolid } from "./adress-book";
+export { default as UserSolid } from "./user";
+export { default as UserCircleSolid } from "./user-circle";
+export { default as UserEditSolid } from "./user-edit";
+export { default as UserGroupSolid } from "./user-group";
+export { default as UserPlusSolid } from "./user-plus";
+export { default as UserRemoveSolid } from "./user-remove";
+export { default as UserSettingsSolid } from "./user-settings";
+export { default as UsersSolid } from "./users";

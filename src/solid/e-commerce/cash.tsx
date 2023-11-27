@@ -1,0 +1,28 @@
+import type { SVGProps } from "react";
+import { Ref, forwardRef } from "react";
+
+const SvgCash = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 20 16"
+    ref={ref}
+    {...props}
+  >
+    <path
+      fill="#2F2F38"
+      d="M18 0H6a2 2 0 0 0-2 2h10a4 4 0 0 1 4 4v6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
+    />
+    <path
+      fill="#2F2F38"
+      d="M14 16H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2"
+    />
+    <path
+      fill="#fff"
+      d="M8 13a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0-4a1 1 0 1 0 0 2 1 1 0 0 0 0-2"
+    />
+  </svg>
+);
+
+const ForwardRef = forwardRef(SvgCash);
+export default ForwardRef;
