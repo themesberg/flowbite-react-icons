@@ -13,7 +13,7 @@ const SvgArrowLeft = (
     {...props}
   >
     <path
-      fill="#2F2F38"
+      fill="currentColor"
       d="M13 5H3.414l2.293-2.293a1 1 0 1 0-1.414-1.414l-4 4a1 1 0 0 0 0 1.416l4 4a1 1 0 0 0 1.414-1.414L3.414 7H13a1 1 0 1 0 0-2"
     />
   </svg>

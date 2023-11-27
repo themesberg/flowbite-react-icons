@@ -13,7 +13,7 @@ const SvgCaretUp = (
     {...props}
   >
     <path
-      fill="#2F2F38"
+      fill="currentColor"
       d="M9.207 1a2 2 0 0 0-2.828 0L.793 6.586A2 2 0 0 0 2.207 10h11.172a2 2 0 0 0 1.414-3.414z"
     />
   </svg>

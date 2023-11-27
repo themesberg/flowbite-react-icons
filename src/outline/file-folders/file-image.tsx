@@ -13,7 +13,7 @@ const SvgFileImage = (
     {...props}
   >
     <path
-      fill="#2F3039"
+      fill="currentColor"
       d="M11.045 7.514a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m-4.572 3.072L3.857 15.92h7.949l-1.811-3.37-1.61 2.716-1.912-4.679Z"
     />
     <path

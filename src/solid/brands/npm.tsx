@@ -11,8 +11,8 @@ const SvgNpm = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => (
     {...props}
   >
     <path
-      fill="#2F3039"
-      stroke="#2F3039"
+      fill="currentColor"
+      stroke="currentColor"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={2}

@@ -12,7 +12,7 @@ const SvgClipboardList = (
     ref={ref}
     {...props}
   >
-    <g fill="#111928">
+    <g fill="currentColor">
       <path d="M16 1h-3.278A1.992 1.992 0 0 0 11 0H7a1.993 1.993 0 0 0-1.722 1H2a2 2 0 0 0-2 2v15a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2m-5 1v2H7V2zm5 16H2V3h3v1a1 1 0 0 0 0 2h8a1 1 0 1 0 0-2V3h3z" />
       <path d="M13 9H8a1 1 0 0 0 0 2h5a1 1 0 0 0 0-2m0 4H8a1 1 0 0 0 0 2h5a1 1 0 0 0 0-2m-8-2a1 1 0 1 0 0-2 1 1 0 0 0 0 2m0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
     </g>

@@ -13,7 +13,7 @@ const SvgEllipseHorizontal = (
     {...props}
   >
     <path
-      fill="#2F2F38"
+      fill="currentColor"
       d="M2 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3m6.041 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3M14 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3"
     />
   </svg>

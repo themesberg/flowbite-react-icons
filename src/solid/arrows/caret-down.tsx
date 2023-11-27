@@ -13,7 +13,7 @@ const SvgCaretDown = (
     {...props}
   >
     <path
-      fill="#2F2F38"
+      fill="currentColor"
       d="M15.434 1.235A2 2 0 0 0 13.586 0H2.414A2 2 0 0 0 1 3.414L6.586 9a2 2 0 0 0 2.828 0L15 3.414a2 2 0 0 0 .434-2.179Z"
     />
   </svg>

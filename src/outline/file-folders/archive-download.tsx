@@ -14,7 +14,7 @@ const SvgArchiveDownload = (
     {...props}
   >
     <path
-      stroke="#2F2F38"
+      stroke="currentColor"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={2}

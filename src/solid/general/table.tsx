@@ -10,7 +10,7 @@ const SvgTable = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => (
     {...props}
   >
     <path
-      fill="#2F2F38"
+      fill="currentColor"
       d="M18 0H2a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M9 6v2H2V6zm2 0h7v2h-7zm-9 4h7v2H2zm9 2v-2h7v2z"
     />
   </svg>

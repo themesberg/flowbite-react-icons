@@ -10,7 +10,7 @@ const SvgBars = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => (
     {...props}
   >
     <path
-      fill="#2F2F38"
+      fill="currentColor"
       d="M16 2H1a1 1 0 0 1 0-2h15a1 1 0 1 1 0 2m0 6H1a1 1 0 0 1 0-2h15a1 1 0 1 1 0 2m0 6H1a1 1 0 0 1 0-2h15a1 1 0 0 1 0 2"
     />
   </svg>

@@ -9,7 +9,7 @@ const SvgMinus = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => (
     ref={ref}
     {...props}
   >
-    <path fill="#2F2F38" d="M17 0H1a1 1 0 0 0 0 2h16a1 1 0 1 0 0-2" />
+    <path fill="currentColor" d="M17 0H1a1 1 0 0 0 0 2h16a1 1 0 1 0 0-2" />
   </svg>
 );
 

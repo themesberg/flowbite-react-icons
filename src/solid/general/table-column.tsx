@@ -13,7 +13,7 @@ const SvgTableColumn = (
     {...props}
   >
     <path
-      fill="#2F2F38"
+      fill="currentColor"
       d="M18 0H2a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M2 6h7v6H2zm9 6V6h7v6z"
     />
   </svg>

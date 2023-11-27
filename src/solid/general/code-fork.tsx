@@ -13,7 +13,7 @@ const SvgCodeFork = (
     {...props}
   >
     <path
-      fill="#2F2F38"
+      fill="currentColor"
       d="M16 4a3 3 0 1 0-4 2.816V9a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6.816a3 3 0 1 0-2 0V9a3 3 0 0 0 3 3h2v3.184a3 3 0 1 0 2 0V12h2a3 3 0 0 0 3-3V6.816A3 3 0 0 0 16 4"
     />
   </svg>

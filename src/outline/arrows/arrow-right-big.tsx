@@ -14,7 +14,7 @@ const SvgArrowRightBig = (
     {...props}
   >
     <path
-      stroke="#2f2f38"
+      stroke="currentColor"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={2}

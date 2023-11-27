@@ -13,7 +13,7 @@ const SvgTextCenter = (
     {...props}
   >
     <path
-      fill="#2F2F38"
+      fill="currentColor"
       d="M11 2H3a1 1 0 0 1 0-2h8a1 1 0 1 1 0 2m2 4H1a1 1 0 0 1 0-2h12a1 1 0 1 1 0 2m-2 4H3a1 1 0 0 1 0-2h8a1 1 0 1 1 0 2m2 4H1a1 1 0 0 1 0-2h12a1 1 0 0 1 0 2"
     />
   </svg>

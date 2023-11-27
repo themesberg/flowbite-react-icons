@@ -10,7 +10,7 @@ const SvgTablet = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => (
     {...props}
   >
     <path
-      fill="#2F2F38"
+      fill="currentColor"
       d="M16 0H2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2m-5.5 17h-3a1 1 0 0 1 0-2h3a1 1 0 0 1 0 2"
     />
   </svg>

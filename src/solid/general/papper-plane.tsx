@@ -13,7 +13,7 @@ const SvgPapperPlane = (
     {...props}
   >
     <path
-      fill="#2F2F38"
+      fill="currentColor"
       d="m17.914 18.594-8-18a1 1 0 0 0-1.828 0l-8 18a1 1 0 0 0 1.157 1.376L8 18.281V9a1 1 0 0 1 2 0v9.281l6.758 1.689a1 1 0 0 0 1.156-1.376Z"
     />
   </svg>

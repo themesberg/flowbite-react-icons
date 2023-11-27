@@ -13,7 +13,7 @@ const SvgCaretRight = (
     {...props}
   >
     <path
-      fill="#2F2F38"
+      fill="currentColor"
       d="M3.414 1A2 2 0 0 0 0 2.414v11.172A2 2 0 0 0 3.414 15L9 9.414a2 2 0 0 0 0-2.828L3.414 1Z"
     />
   </svg>

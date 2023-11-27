@@ -14,14 +14,14 @@ const SvgWandMagicSparkles = (
     {...props}
   >
     <path
-      stroke="#111928"
+      stroke="currentColor"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={2}
       d="m12.555 5.117 2.828 2.828M14 16v4m-2-2h4M3 6v4M1 8h4m11.01-6.339 2.828 2.829L3.99 19.339 1.161 16.51 16.01 1.661"
     />
     <path
-      fill="#111928"
+      fill="currentColor"
       d="M17 12h-2v2h2zM11 1H9v2h2zM8 3H6v2h2zM5 1H3v2h2zM20 9h-2v2h2zM20 14h-2v2h2z"
     />
   </svg>
