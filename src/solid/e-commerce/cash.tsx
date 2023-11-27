@@ -19,10 +19,7 @@ const SvgCash = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => (
       fill="currentColor"
       d="M14 16H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2"
     />
-    <path
-      fill="#fff"
-      d="M8 13a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0-4a1 1 0 1 0 0 2 1 1 0 0 0 0-2"
-    />
+    <path d="M8 13a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0-4a1 1 0 1 0 0 2 1 1 0 0 0 0-2" />
   </svg>
 );
 
