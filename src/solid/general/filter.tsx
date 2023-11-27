@@ -5,6 +5,8 @@ const SvgFilter = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
+    width={24}
+    height={24}
     viewBox="0 0 20 18"
     ref={ref}
     {...props}

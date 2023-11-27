@@ -8,6 +8,8 @@ const SvgAngleRight = (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
+    width={24}
+    height={24}
     viewBox="0 0 8 15"
     ref={ref}
     {...props}
