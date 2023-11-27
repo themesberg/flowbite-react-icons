@@ -4,8 +4,8 @@ import { Ref, forwardRef } from "react";
 const SvgIndent = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width={14}
-    height={15}
+    width={24}
+    height={24}
     fill="none"
     ref={ref}
     {...props}

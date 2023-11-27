@@ -7,8 +7,8 @@ const SvgChartBars3FromLeft = (
 ) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width={16}
-    height={12}
+    width={24}
+    height={24}
     fill="none"
     ref={ref}
     {...props}

@@ -7,8 +7,8 @@ const SvgTextSize = (
 ) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width={18}
-    height={15}
+    width={24}
+    height={24}
     fill="none"
     ref={ref}
     {...props}
