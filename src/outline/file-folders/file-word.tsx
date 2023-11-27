@@ -1,10 +1,7 @@
 import type { SVGProps } from "react";
 import { Ref, forwardRef } from "react";
 
-const SvgFileWord = (
-  props: SVGProps<SVGSVGElement>,
-  ref: Ref<SVGSVGElement>,
-) => (
+const FileWord = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
@@ -24,5 +21,5 @@ const SvgFileWord = (
   </svg>
 );
 
-const ForwardRef = forwardRef(SvgFileWord);
+const ForwardRef = forwardRef(FileWord);
 export default ForwardRef;

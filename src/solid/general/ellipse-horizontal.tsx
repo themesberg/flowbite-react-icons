@@ -1,7 +1,7 @@
 import type { SVGProps } from "react";
 import { Ref, forwardRef } from "react";
 
-const SvgEllipseHorizontal = (
+const EllipseHorizontal = (
   props: SVGProps<SVGSVGElement>,
   ref: Ref<SVGSVGElement>,
 ) => (
@@ -21,5 +21,5 @@ const SvgEllipseHorizontal = (
   </svg>
 );
 
-const ForwardRef = forwardRef(SvgEllipseHorizontal);
+const ForwardRef = forwardRef(EllipseHorizontal);
 export default ForwardRef;

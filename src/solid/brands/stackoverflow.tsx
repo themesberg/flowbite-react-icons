@@ -1,7 +1,7 @@
 import type { SVGProps } from "react";
 import { Ref, forwardRef } from "react";
 
-const SvgStackoverflow = (
+const Stackoverflow = (
   props: SVGProps<SVGSVGElement>,
   ref: Ref<SVGSVGElement>,
 ) => (
@@ -21,5 +21,5 @@ const SvgStackoverflow = (
   </svg>
 );
 
-const ForwardRef = forwardRef(SvgStackoverflow);
+const ForwardRef = forwardRef(Stackoverflow);
 export default ForwardRef;

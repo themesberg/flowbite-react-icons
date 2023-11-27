@@ -1,10 +1,7 @@
 import type { SVGProps } from "react";
 import { Ref, forwardRef } from "react";
 
-const SvgFileMusic = (
-  props: SVGProps<SVGSVGElement>,
-  ref: Ref<SVGSVGElement>,
-) => (
+const FileMusic = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
@@ -21,5 +18,5 @@ const SvgFileMusic = (
   </svg>
 );
 
-const ForwardRef = forwardRef(SvgFileMusic);
+const ForwardRef = forwardRef(FileMusic);
 export default ForwardRef;

@@ -1,7 +1,7 @@
 import type { SVGProps } from "react";
 import { Ref, forwardRef } from "react";
 
-const SvgBars = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => (
+const Bars = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
@@ -21,5 +21,5 @@ const SvgBars = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => (
   </svg>
 );
 
-const ForwardRef = forwardRef(SvgBars);
+const ForwardRef = forwardRef(Bars);
 export default ForwardRef;

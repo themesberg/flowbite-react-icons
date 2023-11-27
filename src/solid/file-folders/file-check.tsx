@@ -1,10 +1,7 @@
 import type { SVGProps } from "react";
 import { Ref, forwardRef } from "react";
 
-const SvgFileCheck = (
-  props: SVGProps<SVGSVGElement>,
-  ref: Ref<SVGSVGElement>,
-) => (
+const FileCheck = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
@@ -21,5 +18,5 @@ const SvgFileCheck = (
   </svg>
 );
 
-const ForwardRef = forwardRef(SvgFileCheck);
+const ForwardRef = forwardRef(FileCheck);
 export default ForwardRef;

@@ -1,7 +1,7 @@
 import type { SVGProps } from "react";
 import { Ref, forwardRef } from "react";
 
-const SvgAngleRight = (
+const AngleRight = (
   props: SVGProps<SVGSVGElement>,
   ref: Ref<SVGSVGElement>,
 ) => (
@@ -21,5 +21,5 @@ const SvgAngleRight = (
   </svg>
 );
 
-const ForwardRef = forwardRef(SvgAngleRight);
+const ForwardRef = forwardRef(AngleRight);
 export default ForwardRef;

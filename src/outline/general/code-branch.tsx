@@ -1,7 +1,7 @@
 import type { SVGProps } from "react";
 import { Ref, forwardRef } from "react";
 
-const SvgCodeBranch = (
+const CodeBranch = (
   props: SVGProps<SVGSVGElement>,
   ref: Ref<SVGSVGElement>,
 ) => (
@@ -24,5 +24,5 @@ const SvgCodeBranch = (
   </svg>
 );
 
-const ForwardRef = forwardRef(SvgCodeBranch);
+const ForwardRef = forwardRef(CodeBranch);
 export default ForwardRef;

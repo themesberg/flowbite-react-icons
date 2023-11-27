@@ -1,10 +1,7 @@
 import type { SVGProps } from "react";
 import { Ref, forwardRef } from "react";
 
-const SvgEyeSlash = (
-  props: SVGProps<SVGSVGElement>,
-  ref: Ref<SVGSVGElement>,
-) => (
+const EyeSlash = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
@@ -22,5 +19,5 @@ const SvgEyeSlash = (
   </svg>
 );
 
-const ForwardRef = forwardRef(SvgEyeSlash);
+const ForwardRef = forwardRef(EyeSlash);
 export default ForwardRef;

@@ -1,10 +1,7 @@
 import type { SVGProps } from "react";
 import { Ref, forwardRef } from "react";
 
-const SvgChartPie = (
-  props: SVGProps<SVGSVGElement>,
-  ref: Ref<SVGSVGElement>,
-) => (
+const ChartPie = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
@@ -26,5 +23,5 @@ const SvgChartPie = (
   </svg>
 );
 
-const ForwardRef = forwardRef(SvgChartPie);
+const ForwardRef = forwardRef(ChartPie);
 export default ForwardRef;

@@ -1,7 +1,7 @@
 import type { SVGProps } from "react";
 import { Ref, forwardRef } from "react";
 
-const SvgOrdoredList = (
+const OrdoredList = (
   props: SVGProps<SVGSVGElement>,
   ref: Ref<SVGSVGElement>,
 ) => (
@@ -24,5 +24,5 @@ const SvgOrdoredList = (
   </svg>
 );
 
-const ForwardRef = forwardRef(SvgOrdoredList);
+const ForwardRef = forwardRef(OrdoredList);
 export default ForwardRef;

@@ -1,7 +1,7 @@
 import type { SVGProps } from "react";
 import { Ref, forwardRef } from "react";
 
-const SvgCalendarMonth = (
+const CalendarMonth = (
   props: SVGProps<SVGSVGElement>,
   ref: Ref<SVGSVGElement>,
 ) => (
@@ -21,5 +21,5 @@ const SvgCalendarMonth = (
   </svg>
 );
 
-const ForwardRef = forwardRef(SvgCalendarMonth);
+const ForwardRef = forwardRef(CalendarMonth);
 export default ForwardRef;

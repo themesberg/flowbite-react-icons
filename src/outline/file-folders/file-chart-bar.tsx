@@ -1,7 +1,7 @@
 import type { SVGProps } from "react";
 import { Ref, forwardRef } from "react";
 
-const SvgFileChartBar = (
+const FileChartBar = (
   props: SVGProps<SVGSVGElement>,
   ref: Ref<SVGSVGElement>,
 ) => (
@@ -24,5 +24,5 @@ const SvgFileChartBar = (
   </svg>
 );
 
-const ForwardRef = forwardRef(SvgFileChartBar);
+const ForwardRef = forwardRef(FileChartBar);
 export default ForwardRef;

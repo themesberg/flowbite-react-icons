@@ -1,10 +1,7 @@
 import type { SVGProps } from "react";
 import { Ref, forwardRef } from "react";
 
-const SvgKeyboard = (
-  props: SVGProps<SVGSVGElement>,
-  ref: Ref<SVGSVGElement>,
-) => (
+const Keyboard = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
@@ -21,5 +18,5 @@ const SvgKeyboard = (
   </svg>
 );
 
-const ForwardRef = forwardRef(SvgKeyboard);
+const ForwardRef = forwardRef(Keyboard);
 export default ForwardRef;

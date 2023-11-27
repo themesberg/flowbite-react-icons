@@ -1,7 +1,7 @@
 import type { SVGProps } from "react";
 import { Ref, forwardRef } from "react";
 
-const SvgCodePullRequest = (
+const CodePullRequest = (
   props: SVGProps<SVGSVGElement>,
   ref: Ref<SVGSVGElement>,
 ) => (
@@ -24,5 +24,5 @@ const SvgCodePullRequest = (
   </svg>
 );
 
-const ForwardRef = forwardRef(SvgCodePullRequest);
+const ForwardRef = forwardRef(CodePullRequest);
 export default ForwardRef;

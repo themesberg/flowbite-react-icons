@@ -1,7 +1,7 @@
 import type { SVGProps } from "react";
 import { Ref, forwardRef } from "react";
 
-const SvgCloudArrowUp = (
+const CloudArrowUp = (
   props: SVGProps<SVGSVGElement>,
   ref: Ref<SVGSVGElement>,
 ) => (
@@ -24,5 +24,5 @@ const SvgCloudArrowUp = (
   </svg>
 );
 
-const ForwardRef = forwardRef(SvgCloudArrowUp);
+const ForwardRef = forwardRef(CloudArrowUp);
 export default ForwardRef;

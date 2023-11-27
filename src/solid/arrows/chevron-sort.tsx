@@ -1,7 +1,7 @@
 import type { SVGProps } from "react";
 import { Ref, forwardRef } from "react";
 
-const SvgChevronSort = (
+const ChevronSort = (
   props: SVGProps<SVGSVGElement>,
   ref: Ref<SVGSVGElement>,
 ) => (
@@ -21,5 +21,5 @@ const SvgChevronSort = (
   </svg>
 );
 
-const ForwardRef = forwardRef(SvgChevronSort);
+const ForwardRef = forwardRef(ChevronSort);
 export default ForwardRef;

@@ -1,7 +1,7 @@
 import type { SVGProps } from "react";
 import { Ref, forwardRef } from "react";
 
-const SvgFileImport = (
+const FileImport = (
   props: SVGProps<SVGSVGElement>,
   ref: Ref<SVGSVGElement>,
 ) => (
@@ -21,5 +21,5 @@ const SvgFileImport = (
   </svg>
 );
 
-const ForwardRef = forwardRef(SvgFileImport);
+const ForwardRef = forwardRef(FileImport);
 export default ForwardRef;

@@ -1,7 +1,7 @@
 import type { SVGProps } from "react";
 import { Ref, forwardRef } from "react";
 
-const SvgScaleBalanced = (
+const ScaleBalanced = (
   props: SVGProps<SVGSVGElement>,
   ref: Ref<SVGSVGElement>,
 ) => (
@@ -24,5 +24,5 @@ const SvgScaleBalanced = (
   </svg>
 );
 
-const ForwardRef = forwardRef(SvgScaleBalanced);
+const ForwardRef = forwardRef(ScaleBalanced);
 export default ForwardRef;

@@ -1,7 +1,7 @@
 import type { SVGProps } from "react";
 import { Ref, forwardRef } from "react";
 
-const SvgCalendarEdit = (
+const CalendarEdit = (
   props: SVGProps<SVGSVGElement>,
   ref: Ref<SVGSVGElement>,
 ) => (
@@ -21,5 +21,5 @@ const SvgCalendarEdit = (
   </svg>
 );
 
-const ForwardRef = forwardRef(SvgCalendarEdit);
+const ForwardRef = forwardRef(CalendarEdit);
 export default ForwardRef;

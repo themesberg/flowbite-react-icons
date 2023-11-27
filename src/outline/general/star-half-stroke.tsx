@@ -1,7 +1,7 @@
 import type { SVGProps } from "react";
 import { Ref, forwardRef } from "react";
 
-const SvgStarHalfStroke = (
+const StarHalfStroke = (
   props: SVGProps<SVGSVGElement>,
   ref: Ref<SVGSVGElement>,
 ) => (
@@ -23,5 +23,5 @@ const SvgStarHalfStroke = (
   </svg>
 );
 
-const ForwardRef = forwardRef(SvgStarHalfStroke);
+const ForwardRef = forwardRef(StarHalfStroke);
 export default ForwardRef;

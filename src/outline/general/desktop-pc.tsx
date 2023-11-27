@@ -1,10 +1,7 @@
 import type { SVGProps } from "react";
 import { Ref, forwardRef } from "react";
 
-const SvgDesktopPc = (
-  props: SVGProps<SVGSVGElement>,
-  ref: Ref<SVGSVGElement>,
-) => (
+const DesktopPc = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
@@ -24,5 +21,5 @@ const SvgDesktopPc = (
   </svg>
 );
 
-const ForwardRef = forwardRef(SvgDesktopPc);
+const ForwardRef = forwardRef(DesktopPc);
 export default ForwardRef;

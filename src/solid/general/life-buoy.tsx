@@ -1,10 +1,7 @@
 import type { SVGProps } from "react";
 import { Ref, forwardRef } from "react";
 
-const SvgLifeBuoy = (
-  props: SVGProps<SVGSVGElement>,
-  ref: Ref<SVGSVGElement>,
-) => (
+const LifeBuoy = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
@@ -21,5 +18,5 @@ const SvgLifeBuoy = (
   </svg>
 );
 
-const ForwardRef = forwardRef(SvgLifeBuoy);
+const ForwardRef = forwardRef(LifeBuoy);
 export default ForwardRef;

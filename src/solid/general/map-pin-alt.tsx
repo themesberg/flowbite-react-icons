@@ -1,10 +1,7 @@
 import type { SVGProps } from "react";
 import { Ref, forwardRef } from "react";
 
-const SvgMapPinAlt = (
-  props: SVGProps<SVGSVGElement>,
-  ref: Ref<SVGSVGElement>,
-) => (
+const MapPinAlt = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
@@ -21,5 +18,5 @@ const SvgMapPinAlt = (
   </svg>
 );
 
-const ForwardRef = forwardRef(SvgMapPinAlt);
+const ForwardRef = forwardRef(MapPinAlt);
 export default ForwardRef;

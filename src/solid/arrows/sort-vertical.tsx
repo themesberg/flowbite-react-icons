@@ -1,7 +1,7 @@
 import type { SVGProps } from "react";
 import { Ref, forwardRef } from "react";
 
-const SvgSortVertical = (
+const SortVertical = (
   props: SVGProps<SVGSVGElement>,
   ref: Ref<SVGSVGElement>,
 ) => (
@@ -21,5 +21,5 @@ const SvgSortVertical = (
   </svg>
 );
 
-const ForwardRef = forwardRef(SvgSortVertical);
+const ForwardRef = forwardRef(SortVertical);
 export default ForwardRef;

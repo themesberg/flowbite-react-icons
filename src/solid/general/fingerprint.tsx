@@ -1,7 +1,7 @@
 import type { SVGProps } from "react";
 import { Ref, forwardRef } from "react";
 
-const SvgFingerprint = (
+const Fingerprint = (
   props: SVGProps<SVGSVGElement>,
   ref: Ref<SVGSVGElement>,
 ) => (
@@ -23,5 +23,5 @@ const SvgFingerprint = (
   </svg>
 );
 
-const ForwardRef = forwardRef(SvgFingerprint);
+const ForwardRef = forwardRef(Fingerprint);
 export default ForwardRef;

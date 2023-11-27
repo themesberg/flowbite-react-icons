@@ -1,7 +1,7 @@
 import type { SVGProps } from "react";
 import { Ref, forwardRef } from "react";
 
-const SvgPenNib = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => (
+const PenNib = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
@@ -25,5 +25,5 @@ const SvgPenNib = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => (
   </svg>
 );
 
-const ForwardRef = forwardRef(SvgPenNib);
+const ForwardRef = forwardRef(PenNib);
 export default ForwardRef;

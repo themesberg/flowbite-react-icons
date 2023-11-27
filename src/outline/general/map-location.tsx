@@ -1,7 +1,7 @@
 import type { SVGProps } from "react";
 import { Ref, forwardRef } from "react";
 
-const SvgMapLocation = (
+const MapLocation = (
   props: SVGProps<SVGSVGElement>,
   ref: Ref<SVGSVGElement>,
 ) => (
@@ -26,5 +26,5 @@ const SvgMapLocation = (
   </svg>
 );
 
-const ForwardRef = forwardRef(SvgMapLocation);
+const ForwardRef = forwardRef(MapLocation);
 export default ForwardRef;

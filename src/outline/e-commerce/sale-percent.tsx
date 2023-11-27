@@ -1,7 +1,7 @@
 import type { SVGProps } from "react";
 import { Ref, forwardRef } from "react";
 
-const SvgSalePercent = (
+const SalePercent = (
   props: SVGProps<SVGSVGElement>,
   ref: Ref<SVGSVGElement>,
 ) => (
@@ -24,5 +24,5 @@ const SvgSalePercent = (
   </svg>
 );
 
-const ForwardRef = forwardRef(SvgSalePercent);
+const ForwardRef = forwardRef(SalePercent);
 export default ForwardRef;

@@ -1,7 +1,7 @@
 import type { SVGProps } from "react";
 import { Ref, forwardRef } from "react";
 
-const SvgUserHeadset = (
+const UserHeadset = (
   props: SVGProps<SVGSVGElement>,
   ref: Ref<SVGSVGElement>,
 ) => (
@@ -21,5 +21,5 @@ const SvgUserHeadset = (
   </svg>
 );
 
-const ForwardRef = forwardRef(SvgUserHeadset);
+const ForwardRef = forwardRef(UserHeadset);
 export default ForwardRef;

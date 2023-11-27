@@ -1,7 +1,7 @@
 import type { SVGProps } from "react";
 import { Ref, forwardRef } from "react";
 
-const SvgFileShield = (
+const FileShield = (
   props: SVGProps<SVGSVGElement>,
   ref: Ref<SVGSVGElement>,
 ) => (
@@ -21,5 +21,5 @@ const SvgFileShield = (
   </svg>
 );
 
-const ForwardRef = forwardRef(SvgFileShield);
+const ForwardRef = forwardRef(FileShield);
 export default ForwardRef;

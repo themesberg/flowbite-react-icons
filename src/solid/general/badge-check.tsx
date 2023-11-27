@@ -1,7 +1,7 @@
 import type { SVGProps } from "react";
 import { Ref, forwardRef } from "react";
 
-const SvgBadgeCheck = (
+const BadgeCheck = (
   props: SVGProps<SVGSVGElement>,
   ref: Ref<SVGSVGElement>,
 ) => (
@@ -21,5 +21,5 @@ const SvgBadgeCheck = (
   </svg>
 );
 
-const ForwardRef = forwardRef(SvgBadgeCheck);
+const ForwardRef = forwardRef(BadgeCheck);
 export default ForwardRef;

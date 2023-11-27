@@ -1,7 +1,7 @@
 import type { SVGProps } from "react";
 import { Ref, forwardRef } from "react";
 
-const SvgLetterItalic = (
+const LetterItalic = (
   props: SVGProps<SVGSVGElement>,
   ref: Ref<SVGSVGElement>,
 ) => (
@@ -24,5 +24,5 @@ const SvgLetterItalic = (
   </svg>
 );
 
-const ForwardRef = forwardRef(SvgLetterItalic);
+const ForwardRef = forwardRef(LetterItalic);
 export default ForwardRef;

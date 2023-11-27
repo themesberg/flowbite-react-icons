@@ -1,7 +1,7 @@
 import type { SVGProps } from "react";
 import { Ref, forwardRef } from "react";
 
-const SvgCirclePause = (
+const CirclePause = (
   props: SVGProps<SVGSVGElement>,
   ref: Ref<SVGSVGElement>,
 ) => (
@@ -23,5 +23,5 @@ const SvgCirclePause = (
   </svg>
 );
 
-const ForwardRef = forwardRef(SvgCirclePause);
+const ForwardRef = forwardRef(CirclePause);
 export default ForwardRef;

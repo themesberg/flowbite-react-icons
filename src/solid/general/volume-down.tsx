@@ -1,7 +1,7 @@
 import type { SVGProps } from "react";
 import { Ref, forwardRef } from "react";
 
-const SvgVolumeDown = (
+const VolumeDown = (
   props: SVGProps<SVGSVGElement>,
   ref: Ref<SVGSVGElement>,
 ) => (
@@ -21,5 +21,5 @@ const SvgVolumeDown = (
   </svg>
 );
 
-const ForwardRef = forwardRef(SvgVolumeDown);
+const ForwardRef = forwardRef(VolumeDown);
 export default ForwardRef;

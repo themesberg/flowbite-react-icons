@@ -1,7 +1,7 @@
 import type { SVGProps } from "react";
 import { Ref, forwardRef } from "react";
 
-const SvgRulerCombined = (
+const RulerCombined = (
   props: SVGProps<SVGSVGElement>,
   ref: Ref<SVGSVGElement>,
 ) => (
@@ -21,5 +21,5 @@ const SvgRulerCombined = (
   </svg>
 );
 
-const ForwardRef = forwardRef(SvgRulerCombined);
+const ForwardRef = forwardRef(RulerCombined);
 export default ForwardRef;

@@ -1,7 +1,7 @@
 import type { SVGProps } from "react";
 import { Ref, forwardRef } from "react";
 
-const SvgAnnotation = (
+const Annotation = (
   props: SVGProps<SVGSVGElement>,
   ref: Ref<SVGSVGElement>,
 ) => (
@@ -21,5 +21,5 @@ const SvgAnnotation = (
   </svg>
 );
 
-const ForwardRef = forwardRef(SvgAnnotation);
+const ForwardRef = forwardRef(Annotation);
 export default ForwardRef;

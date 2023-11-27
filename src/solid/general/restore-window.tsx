@@ -1,7 +1,7 @@
 import type { SVGProps } from "react";
 import { Ref, forwardRef } from "react";
 
-const SvgRestoreWindow = (
+const RestoreWindow = (
   props: SVGProps<SVGSVGElement>,
   ref: Ref<SVGSVGElement>,
 ) => (
@@ -21,5 +21,5 @@ const SvgRestoreWindow = (
   </svg>
 );
 
-const ForwardRef = forwardRef(SvgRestoreWindow);
+const ForwardRef = forwardRef(RestoreWindow);
 export default ForwardRef;

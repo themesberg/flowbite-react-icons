@@ -1,7 +1,7 @@
 import type { SVGProps } from "react";
 import { Ref, forwardRef } from "react";
 
-const SvgFileWordpress = (
+const FileWordpress = (
   props: SVGProps<SVGSVGElement>,
   ref: Ref<SVGSVGElement>,
 ) => (
@@ -21,5 +21,5 @@ const SvgFileWordpress = (
   </svg>
 );
 
-const ForwardRef = forwardRef(SvgFileWordpress);
+const ForwardRef = forwardRef(FileWordpress);
 export default ForwardRef;

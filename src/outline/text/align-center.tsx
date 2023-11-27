@@ -1,7 +1,7 @@
 import type { SVGProps } from "react";
 import { Ref, forwardRef } from "react";
 
-const SvgAlignCenter = (
+const AlignCenter = (
   props: SVGProps<SVGSVGElement>,
   ref: Ref<SVGSVGElement>,
 ) => (
@@ -24,5 +24,5 @@ const SvgAlignCenter = (
   </svg>
 );
 
-const ForwardRef = forwardRef(SvgAlignCenter);
+const ForwardRef = forwardRef(AlignCenter);
 export default ForwardRef;

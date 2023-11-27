@@ -1,10 +1,7 @@
 import type { SVGProps } from "react";
 import { Ref, forwardRef } from "react";
 
-const SvgPaperClip = (
-  props: SVGProps<SVGSVGElement>,
-  ref: Ref<SVGSVGElement>,
-) => (
+const PaperClip = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
@@ -23,5 +20,5 @@ const SvgPaperClip = (
   </svg>
 );
 
-const ForwardRef = forwardRef(SvgPaperClip);
+const ForwardRef = forwardRef(PaperClip);
 export default ForwardRef;

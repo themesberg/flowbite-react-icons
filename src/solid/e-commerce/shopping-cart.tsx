@@ -1,7 +1,7 @@
 import type { SVGProps } from "react";
 import { Ref, forwardRef } from "react";
 
-const SvgShoppingCart = (
+const ShoppingCart = (
   props: SVGProps<SVGSVGElement>,
   ref: Ref<SVGSVGElement>,
 ) => (
@@ -21,5 +21,5 @@ const SvgShoppingCart = (
   </svg>
 );
 
-const ForwardRef = forwardRef(SvgShoppingCart);
+const ForwardRef = forwardRef(ShoppingCart);
 export default ForwardRef;

@@ -1,7 +1,7 @@
 import type { SVGProps } from "react";
 import { Ref, forwardRef } from "react";
 
-const SvgAdjustmentsHorizontal = (
+const AdjustmentsHorizontal = (
   props: SVGProps<SVGSVGElement>,
   ref: Ref<SVGSVGElement>,
 ) => (
@@ -21,5 +21,5 @@ const SvgAdjustmentsHorizontal = (
   </svg>
 );
 
-const ForwardRef = forwardRef(SvgAdjustmentsHorizontal);
+const ForwardRef = forwardRef(AdjustmentsHorizontal);
 export default ForwardRef;

@@ -1,7 +1,7 @@
 import type { SVGProps } from "react";
 import { Ref, forwardRef } from "react";
 
-const SvgBellActiveAlt = (
+const BellActiveAlt = (
   props: SVGProps<SVGSVGElement>,
   ref: Ref<SVGSVGElement>,
 ) => (
@@ -21,5 +21,5 @@ const SvgBellActiveAlt = (
   </svg>
 );
 
-const ForwardRef = forwardRef(SvgBellActiveAlt);
+const ForwardRef = forwardRef(BellActiveAlt);
 export default ForwardRef;

@@ -1,10 +1,7 @@
 import type { SVGProps } from "react";
 import { Ref, forwardRef } from "react";
 
-const SvgGiftBox = (
-  props: SVGProps<SVGSVGElement>,
-  ref: Ref<SVGSVGElement>,
-) => (
+const GiftBox = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
@@ -21,5 +18,5 @@ const SvgGiftBox = (
   </svg>
 );
 
-const ForwardRef = forwardRef(SvgGiftBox);
+const ForwardRef = forwardRef(GiftBox);
 export default ForwardRef;

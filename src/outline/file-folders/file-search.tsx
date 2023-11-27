@@ -1,7 +1,7 @@
 import type { SVGProps } from "react";
 import { Ref, forwardRef } from "react";
 
-const SvgFileSearch = (
+const FileSearch = (
   props: SVGProps<SVGSVGElement>,
   ref: Ref<SVGSVGElement>,
 ) => (
@@ -23,5 +23,5 @@ const SvgFileSearch = (
   </svg>
 );
 
-const ForwardRef = forwardRef(SvgFileSearch);
+const ForwardRef = forwardRef(FileSearch);
 export default ForwardRef;

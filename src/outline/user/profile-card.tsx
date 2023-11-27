@@ -1,7 +1,7 @@
 import type { SVGProps } from "react";
 import { Ref, forwardRef } from "react";
 
-const SvgProfileCard = (
+const ProfileCard = (
   props: SVGProps<SVGSVGElement>,
   ref: Ref<SVGSVGElement>,
 ) => (
@@ -24,5 +24,5 @@ const SvgProfileCard = (
   </svg>
 );
 
-const ForwardRef = forwardRef(SvgProfileCard);
+const ForwardRef = forwardRef(ProfileCard);
 export default ForwardRef;

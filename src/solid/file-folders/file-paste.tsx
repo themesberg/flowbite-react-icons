@@ -1,10 +1,7 @@
 import type { SVGProps } from "react";
 import { Ref, forwardRef } from "react";
 
-const SvgFilePaste = (
-  props: SVGProps<SVGSVGElement>,
-  ref: Ref<SVGSVGElement>,
-) => (
+const FilePaste = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
@@ -22,5 +19,5 @@ const SvgFilePaste = (
   </svg>
 );
 
-const ForwardRef = forwardRef(SvgFilePaste);
+const ForwardRef = forwardRef(FilePaste);
 export default ForwardRef;

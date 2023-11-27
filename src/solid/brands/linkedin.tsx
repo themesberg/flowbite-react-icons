@@ -1,10 +1,7 @@
 import type { SVGProps } from "react";
 import { Ref, forwardRef } from "react";
 
-const SvgLinkedin = (
-  props: SVGProps<SVGSVGElement>,
-  ref: Ref<SVGSVGElement>,
-) => (
+const Linkedin = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
@@ -25,5 +22,5 @@ const SvgLinkedin = (
   </svg>
 );
 
-const ForwardRef = forwardRef(SvgLinkedin);
+const ForwardRef = forwardRef(Linkedin);
 export default ForwardRef;

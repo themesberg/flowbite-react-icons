@@ -1,10 +1,7 @@
 import type { SVGProps } from "react";
 import { Ref, forwardRef } from "react";
 
-const SvgArrowBig = (
-  props: SVGProps<SVGSVGElement>,
-  ref: Ref<SVGSVGElement>,
-) => (
+const ArrowBig = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={24}
@@ -20,5 +17,5 @@ const SvgArrowBig = (
   </svg>
 );
 
-const ForwardRef = forwardRef(SvgArrowBig);
+const ForwardRef = forwardRef(ArrowBig);
 export default ForwardRef;

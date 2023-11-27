@@ -1,7 +1,7 @@
 import type { SVGProps } from "react";
 import { Ref, forwardRef } from "react";
 
-const SvgArrowUpRightFromSquare = (
+const ArrowUpRightFromSquare = (
   props: SVGProps<SVGSVGElement>,
   ref: Ref<SVGSVGElement>,
 ) => (
@@ -24,5 +24,5 @@ const SvgArrowUpRightFromSquare = (
   </svg>
 );
 
-const ForwardRef = forwardRef(SvgArrowUpRightFromSquare);
+const ForwardRef = forwardRef(ArrowUpRightFromSquare);
 export default ForwardRef;

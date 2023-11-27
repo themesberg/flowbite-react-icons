@@ -1,7 +1,7 @@
 import type { SVGProps } from "react";
 import { Ref, forwardRef } from "react";
 
-const SvgLetterUnderline = (
+const LetterUnderline = (
   props: SVGProps<SVGSVGElement>,
   ref: Ref<SVGSVGElement>,
 ) => (
@@ -24,5 +24,5 @@ const SvgLetterUnderline = (
   </svg>
 );
 
-const ForwardRef = forwardRef(SvgLetterUnderline);
+const ForwardRef = forwardRef(LetterUnderline);
 export default ForwardRef;

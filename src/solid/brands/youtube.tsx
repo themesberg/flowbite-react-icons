@@ -1,10 +1,7 @@
 import type { SVGProps } from "react";
 import { Ref, forwardRef } from "react";
 
-const SvgYoutube = (
-  props: SVGProps<SVGSVGElement>,
-  ref: Ref<SVGSVGElement>,
-) => (
+const Youtube = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
@@ -23,5 +20,5 @@ const SvgYoutube = (
   </svg>
 );
 
-const ForwardRef = forwardRef(SvgYoutube);
+const ForwardRef = forwardRef(Youtube);
 export default ForwardRef;

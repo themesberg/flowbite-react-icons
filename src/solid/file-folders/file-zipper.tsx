@@ -1,7 +1,7 @@
 import type { SVGProps } from "react";
 import { Ref, forwardRef } from "react";
 
-const SvgFileZipper = (
+const FileZipper = (
   props: SVGProps<SVGSVGElement>,
   ref: Ref<SVGSVGElement>,
 ) => (
@@ -21,5 +21,5 @@ const SvgFileZipper = (
   </svg>
 );
 
-const ForwardRef = forwardRef(SvgFileZipper);
+const ForwardRef = forwardRef(FileZipper);
 export default ForwardRef;

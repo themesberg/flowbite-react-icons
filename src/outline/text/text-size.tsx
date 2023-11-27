@@ -1,10 +1,7 @@
 import type { SVGProps } from "react";
 import { Ref, forwardRef } from "react";
 
-const SvgTextSize = (
-  props: SVGProps<SVGSVGElement>,
-  ref: Ref<SVGSVGElement>,
-) => (
+const TextSize = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={24}
@@ -23,5 +20,5 @@ const SvgTextSize = (
   </svg>
 );
 
-const ForwardRef = forwardRef(SvgTextSize);
+const ForwardRef = forwardRef(TextSize);
 export default ForwardRef;

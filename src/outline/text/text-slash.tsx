@@ -1,10 +1,7 @@
 import type { SVGProps } from "react";
 import { Ref, forwardRef } from "react";
 
-const SvgTextSlash = (
-  props: SVGProps<SVGSVGElement>,
-  ref: Ref<SVGSVGElement>,
-) => (
+const TextSlash = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={24}
@@ -23,5 +20,5 @@ const SvgTextSlash = (
   </svg>
 );
 
-const ForwardRef = forwardRef(SvgTextSlash);
+const ForwardRef = forwardRef(TextSlash);
 export default ForwardRef;

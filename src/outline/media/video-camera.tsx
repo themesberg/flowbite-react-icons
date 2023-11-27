@@ -1,7 +1,7 @@
 import type { SVGProps } from "react";
 import { Ref, forwardRef } from "react";
 
-const SvgVideoCamera = (
+const VideoCamera = (
   props: SVGProps<SVGSVGElement>,
   ref: Ref<SVGSVGElement>,
 ) => (
@@ -24,5 +24,5 @@ const SvgVideoCamera = (
   </svg>
 );
 
-const ForwardRef = forwardRef(SvgVideoCamera);
+const ForwardRef = forwardRef(VideoCamera);
 export default ForwardRef;

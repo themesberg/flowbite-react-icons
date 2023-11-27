@@ -1,7 +1,7 @@
 import type { SVGProps } from "react";
 import { Ref, forwardRef } from "react";
 
-const SvgChartMixedDollar = (
+const ChartMixedDollar = (
   props: SVGProps<SVGSVGElement>,
   ref: Ref<SVGSVGElement>,
 ) => (
@@ -23,5 +23,5 @@ const SvgChartMixedDollar = (
   </svg>
 );
 
-const ForwardRef = forwardRef(SvgChartMixedDollar);
+const ForwardRef = forwardRef(ChartMixedDollar);
 export default ForwardRef;

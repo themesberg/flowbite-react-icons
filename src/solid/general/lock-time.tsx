@@ -1,10 +1,7 @@
 import type { SVGProps } from "react";
 import { Ref, forwardRef } from "react";
 
-const SvgLockTime = (
-  props: SVGProps<SVGSVGElement>,
-  ref: Ref<SVGSVGElement>,
-) => (
+const LockTime = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={24}
@@ -24,5 +21,5 @@ const SvgLockTime = (
   </svg>
 );
 
-const ForwardRef = forwardRef(SvgLockTime);
+const ForwardRef = forwardRef(LockTime);
 export default ForwardRef;

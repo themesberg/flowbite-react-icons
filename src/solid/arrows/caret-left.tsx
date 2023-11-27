@@ -1,10 +1,7 @@
 import type { SVGProps } from "react";
 import { Ref, forwardRef } from "react";
 
-const SvgCaretLeft = (
-  props: SVGProps<SVGSVGElement>,
-  ref: Ref<SVGSVGElement>,
-) => (
+const CaretLeft = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
@@ -21,5 +18,5 @@ const SvgCaretLeft = (
   </svg>
 );
 
-const ForwardRef = forwardRef(SvgCaretLeft);
+const ForwardRef = forwardRef(CaretLeft);
 export default ForwardRef;

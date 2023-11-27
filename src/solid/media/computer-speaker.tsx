@@ -1,7 +1,7 @@
 import type { SVGProps } from "react";
 import { Ref, forwardRef } from "react";
 
-const SvgComputerSpeaker = (
+const ComputerSpeaker = (
   props: SVGProps<SVGSVGElement>,
   ref: Ref<SVGSVGElement>,
 ) => (
@@ -22,5 +22,5 @@ const SvgComputerSpeaker = (
   </svg>
 );
 
-const ForwardRef = forwardRef(SvgComputerSpeaker);
+const ForwardRef = forwardRef(ComputerSpeaker);
 export default ForwardRef;
