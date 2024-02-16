@@ -1,3 +1,5 @@
+import fs from "node:fs/promises";
+import path from "path";
 import { $ } from "bun";
 import { rimraf } from "rimraf";
 
@@ -12,15 +14,51 @@ async function prepare() {
 }
 
 async function cloneRepo() {
-  console.log("Cloning repo:", REPO_URL);
-  await $`git clone ${REPO_URL} ${REPO_NAME}`;
+  console.log(`Repo: cloning [${REPO_URL}] into [${REPO_NAME}] folder...`);
+  await $`git clone ${REPO_URL} ${REPO_NAME}`.quiet();
 }
 
 async function generateIcons() {
-  console.log("Generating icons");
-  await $`bun run svgr --out-dir ${SVGR_OUTPUT_DIR} -- ${REPO_NAME}/${REPO_SVG_DIR}`;
+  console.log(`Icons: generating into [${SVGR_OUTPUT_DIR}] folder...`);
+  // await $`bun run svgr --out-dir ${SVGR_OUTPUT_DIR} -- ${REPO_NAME}/${REPO_SVG_DIR}`;
+  await $`bun run svgr --out-dir ${SVGR_OUTPUT_DIR} -- svgs`.quiet();
+  await replaceSvgWithBaseIcon();
+  // TODO: Creating index files
+  await $`bun run format`.quiet();
+}
 
-  console.log("TODO: Creating index files");
+async function replaceSvgWithBaseIcon() {
+  readFiles(SVGR_OUTPUT_DIR, (filePath) =>
+    renameFileElement(filePath, "svg", "BaseIcon"),
+  );
+}
+
+async function renameFileElement(
+  filePath: string,
+  target: string,
+  name: string,
+) {
+  const data = await fs.readFile(filePath, "utf8");
+  const newData = data.replace(new RegExp(target, "g"), name);
+  await fs.writeFile(filePath, newData, "utf8");
+}
+
+async function readFiles(
+  directoryPath: string,
+  onReadFile: (filePath: string) => Promise<void>,
+) {
+  const files = await fs.readdir(directoryPath);
+
+  for (const file of files) {
+    const filePath = path.join(directoryPath, file);
+    const stat = await fs.stat(filePath);
+
+    if (stat.isDirectory()) {
+      await readFiles(filePath, onReadFile);
+    } else {
+      await onReadFile(filePath);
+    }
+  }
 }
 
 async function cleanup() {
