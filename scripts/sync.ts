@@ -20,7 +20,7 @@ async function cloneRepo() {
 
 async function generateIcons() {
   console.log(`Icons: generating into [${SVGR_OUTPUT_DIR}] folder...`);
-  await $`bun run svgr --out-dir ${SVGR_OUTPUT_DIR} -- ${REPO_NAME}/${REPO_SVG_DIR}`;
+  await $`bun run svgr --out-dir ${SVGR_OUTPUT_DIR} -- ${REPO_NAME}/${REPO_SVG_DIR}`.quiet();
   await replaceSvgWithBaseIcon();
   // TODO: Creating index files
   await $`bun run format`.quiet();
