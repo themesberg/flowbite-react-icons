@@ -17,7 +17,11 @@
     "downlevelIteration": true,
     "sourceMap": true,
     "outDir": "./dist",
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./src/*"]
+    }
   },
   "exclude": ["**/node_modules"]
 }
