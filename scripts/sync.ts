@@ -20,8 +20,7 @@ async function cloneRepo() {
 
 async function generateIcons() {
   console.log(`Icons: generating into [${SVGR_OUTPUT_DIR}] folder...`);
-  // await $`bun run svgr --out-dir ${SVGR_OUTPUT_DIR} -- ${REPO_NAME}/${REPO_SVG_DIR}`;
-  await $`bun run svgr --out-dir ${SVGR_OUTPUT_DIR} -- svgs`.quiet();
+  await $`bun run svgr --out-dir ${SVGR_OUTPUT_DIR} -- ${REPO_NAME}/${REPO_SVG_DIR}`;
   await replaceSvgWithBaseIcon();
   // TODO: Creating index files
   await $`bun run format`.quiet();
@@ -38,9 +37,9 @@ async function renameFileElement(
   target: string,
   name: string,
 ) {
-  const data = await fs.readFile(filePath, "utf8");
+  const data = await Bun.file(filePath).text();
   const newData = data.replace(new RegExp(target, "g"), name);
-  await fs.writeFile(filePath, newData, "utf8");
+  await Bun.write(filePath, newData);
 }
 
 async function readFiles(
