@@ -1,0 +1,17 @@
+import { forwardRef, type PropsWithoutRef } from "react";
+import { BaseIcon } from "~/components/base-icon";
+import type { FlowbiteIconProps } from "~/types";
+
+const SvgPapperPlane = forwardRef<
+  SVGSVGElement,
+  PropsWithoutRef<FlowbiteIconProps>
+>((props, ref) => (
+  <BaseIcon fill="currentColor" ref={ref} {...props}>
+    <path
+      fillRule="evenodd"
+      d="M12 2a1 1 0 0 1 .932.638l7 18a1 1 0 0 1-1.326 1.281L13 19.517V13a1 1 0 1 0-2 0v6.517l-5.606 2.402a1 1 0 0 1-1.326-1.281l7-18A1 1 0 0 1 12 2"
+      clipRule="evenodd"
+    />
+  </BaseIcon>
+));
+export default SvgPapperPlane;

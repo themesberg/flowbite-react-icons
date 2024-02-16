@@ -25,6 +25,16 @@
       "types": "./dist/index.d.ts",
       "import": "./dist/index.mjs",
       "require": "./dist/index.js"
+    },
+    "./outline": {
+      "types": "./dist/icons/outline/index.d.ts",
+      "import": "./dist/icons/outline/index.mjs",
+      "require": "./dist/icons/outline/index.js"
+    },
+    "./solid": {
+      "types": "./dist/icons/solid/index.d.ts",
+      "import": "./dist/icons/solid/index.mjs",
+      "require": "./dist/icons/solid/index.js"
     }
   },
   "main": "./dist/index.js",
@@ -34,7 +44,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "rimraf dist && tsup src/index.ts --format esm,cjs --dts",
+    "build": "rimraf dist && tsup src --format esm,cjs --dts",
     "clean": "rimraf dist node_modules",
     "format": "prettier . --write",
     "format:check": "prettier .",
