@@ -5,12 +5,12 @@ import { rimraf } from "rimraf";
 
 const REPO_NAME = "flowbite-icons";
 const REPO_URL = "https://github.com/themesberg/flowbite-icons.git";
-const REPO_SVG_DIR = "src";
-const SVGR_OUTPUT_DIR = "src/icons";
+const REPO_SVGS_DIR = "src";
+const ICONS_OUTPUT_DIR = "src/icons";
 
 async function prepare() {
-  console.log(`Prepare: Remove [${REPO_NAME}, ${SVGR_OUTPUT_DIR}] folders`);
-  await rimraf([REPO_NAME, SVGR_OUTPUT_DIR]);
+  console.log(`Prepare: Remove [${REPO_NAME}, ${ICONS_OUTPUT_DIR}] folders`);
+  await rimraf([REPO_NAME, ICONS_OUTPUT_DIR]);
 }
 
 async function cloneRepo() {
@@ -19,17 +19,37 @@ async function cloneRepo() {
 }
 
 async function generateIcons() {
-  console.log(`Icons: generating into [${SVGR_OUTPUT_DIR}] folder...`);
-  await $`bun run svgr --out-dir ${SVGR_OUTPUT_DIR} -- ${REPO_NAME}/${REPO_SVG_DIR}`.quiet();
+  console.log(`Icons: generating into [${ICONS_OUTPUT_DIR}] folder...`);
+  await $`bun run svgr --out-dir ${ICONS_OUTPUT_DIR} -- ${REPO_NAME}/${REPO_SVGS_DIR}`.quiet();
   await replaceSvgWithBaseIcon();
-  // TODO: Creating index files
-  await $`bun run format`.quiet();
+  await createIndexFiles();
 }
 
 async function replaceSvgWithBaseIcon() {
-  readFiles(SVGR_OUTPUT_DIR, (filePath) =>
+  readFiles(ICONS_OUTPUT_DIR, (filePath) =>
     renameFileElement(filePath, "svg", "BaseIcon"),
   );
+}
+
+async function createIndexFiles() {
+  const paths = await fs.readdir(ICONS_OUTPUT_DIR);
+
+  for (const path of paths) {
+    createIndexFile(`${ICONS_OUTPUT_DIR}/${path}`);
+  }
+}
+
+async function createIndexFile(directoryPath: string) {
+  const files = await fs.readdir(directoryPath);
+
+  let data = "";
+
+  for (const file of files.sort()) {
+    data += `export * from "./${file}";`;
+    data += "\n";
+  }
+
+  await Bun.write(`${directoryPath}/index.ts`, data);
 }
 
 async function renameFileElement(
@@ -60,6 +80,11 @@ async function readFiles(
   }
 }
 
+async function formatIcons() {
+  console.log(`Format: formatting [${ICONS_OUTPUT_DIR}] folder...`);
+  await $`bun run prettier ${ICONS_OUTPUT_DIR} --write`.quiet();
+}
+
 async function cleanup() {
   console.log(`Cleanup: remove [${REPO_NAME}] folder`);
   await rimraf([REPO_NAME]);
@@ -68,4 +93,5 @@ async function cleanup() {
 await prepare();
 await cloneRepo();
 await generateIcons();
+await formatIcons();
 await cleanup();
