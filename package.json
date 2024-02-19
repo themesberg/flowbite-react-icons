@@ -44,7 +44,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "rimraf dist && tsup src --format esm,cjs --dts",
+    "build": "tsup",
     "clean": "rimraf dist node_modules",
     "format": "prettier . --write",
     "format:check": "prettier .",
