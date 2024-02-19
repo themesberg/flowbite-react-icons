@@ -2,7 +2,7 @@ import { forwardRef, type PropsWithoutRef } from "react";
 import { BaseIcon } from "~/components/base-icon";
 import type { FlowbiteIconProps } from "~/types";
 
-const SvgNewspapper = forwardRef<
+const SvgNewspaper = forwardRef<
   SVGSVGElement,
   PropsWithoutRef<FlowbiteIconProps>
 >((props, ref) => (
@@ -16,4 +16,4 @@ const SvgNewspapper = forwardRef<
     />
   </BaseIcon>
 ));
-export default SvgNewspapper;
+export default SvgNewspaper;
