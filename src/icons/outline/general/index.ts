@@ -83,7 +83,7 @@ export { default as LockOpen } from "./lock-open";
 export { default as LockTime } from "./lock-time";
 export { default as Lock } from "./lock";
 export { default as MailBox } from "./mail-box";
-export { default as MapLocation } from "./map-location";
+export { default as MapPinAlt } from "./map-pin-alt";
 export { default as MapPin } from "./map-pin";
 export { default as MessageCaption } from "./message-caption";
 export { default as MessageDots } from "./message-dots";

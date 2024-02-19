@@ -2,7 +2,7 @@ import { forwardRef, type PropsWithoutRef } from "react";
 import { BaseIcon } from "~/components/base-icon";
 import type { FlowbiteIconProps } from "~/types";
 
-const SvgFaceLaughz = forwardRef<
+const SvgFaceLaugh = forwardRef<
   SVGSVGElement,
   PropsWithoutRef<FlowbiteIconProps>
 >((props, ref) => (
@@ -14,4 +14,4 @@ const SvgFaceLaughz = forwardRef<
     />
   </BaseIcon>
 ));
-export default SvgFaceLaughz;
+export default SvgFaceLaugh;

@@ -2,7 +2,7 @@ import { forwardRef, type PropsWithoutRef } from "react";
 import { BaseIcon } from "~/components/base-icon";
 import type { FlowbiteIconProps } from "~/types";
 
-const SvgMapLocation = forwardRef<
+const SvgMapPinAlt = forwardRef<
   SVGSVGElement,
   PropsWithoutRef<FlowbiteIconProps>
 >((props, ref) => (
@@ -23,4 +23,4 @@ const SvgMapLocation = forwardRef<
     />
   </BaseIcon>
 ));
-export default SvgMapLocation;
+export default SvgMapPinAlt;
