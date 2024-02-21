@@ -11,7 +11,7 @@ const SvgDotsHorizontal = forwardRef<
       stroke="currentColor"
       strokeLinecap="round"
       strokeWidth={3}
-      d="M6 12h0m6 0h0m6 0h0"
+      d="M6 12h.01m6 0h.01m5.99 0h.01"
     />
   </BaseIcon>
 ));

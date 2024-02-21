@@ -12,7 +12,7 @@ const SvgCheckPlusCircle = forwardRef<
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={2}
-      d="M12 21a9 9 0 1 1 3-17.5m-8 6 4 4L19.3 5M17 14v6m-3-3h6"
+      d="M12 21a9 9 0 1 1 0-18c1.052 0 2.062.18 3 .512M7 9.577l3.923 3.923 8.5-8.5M17 14v6m-3-3h6"
     />
   </BaseIcon>
 ));

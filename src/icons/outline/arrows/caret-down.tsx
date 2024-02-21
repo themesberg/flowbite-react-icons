@@ -12,7 +12,7 @@ const SvgCaretDown = forwardRef<
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={2}
-      d="M7.1 8H17a1 1 0 0 1 .8 1.6l-5 6a1 1 0 0 1-1.5 0l-4.9-6A1 1 0 0 1 7.1 8"
+      d="M7.119 8h9.762a1 1 0 0 1 .772 1.636l-4.881 5.927a1 1 0 0 1-1.544 0l-4.88-5.927A1 1 0 0 1 7.118 8Z"
     />
   </BaseIcon>
 ));

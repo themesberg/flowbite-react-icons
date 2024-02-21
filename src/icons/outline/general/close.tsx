@@ -10,7 +10,7 @@ const SvgClose = forwardRef<SVGSVGElement, PropsWithoutRef<FlowbiteIconProps>>(
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth={2}
-        d="M6 18 18 6m0 12L6 6"
+        d="M6 18 17.94 6M18 18 6.06 6"
       />
     </BaseIcon>
   ),

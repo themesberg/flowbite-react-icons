@@ -8,7 +8,7 @@ const SvgEye = forwardRef<SVGSVGElement, PropsWithoutRef<FlowbiteIconProps>>(
       <path
         stroke="currentColor"
         strokeWidth={2}
-        d="M21 12c0 1.2-4 6-9 6s-9-4.8-9-6 4-6 9-6 9 4.8 9 6Z"
+        d="M21 12c0 1.2-4.03 6-9 6s-9-4.8-9-6 4.03-6 9-6 9 4.8 9 6Z"
       />
       <path
         stroke="currentColor"

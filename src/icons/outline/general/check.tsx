@@ -10,7 +10,7 @@ const SvgCheck = forwardRef<SVGSVGElement, PropsWithoutRef<FlowbiteIconProps>>(
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth={2}
-        d="m5 12 4.7 4.5 9.3-9"
+        d="M5 11.917 9.724 16.5 19 7.5"
       />
     </BaseIcon>
   ),

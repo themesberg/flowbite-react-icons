@@ -2,7 +2,7 @@ import { forwardRef, type PropsWithoutRef } from "react";
 import { BaseIcon } from "~/components/base-icon";
 import type { FlowbiteIconProps } from "~/types";
 
-const SvgXCircle = forwardRef<
+const SvgCloseCircle = forwardRef<
   SVGSVGElement,
   PropsWithoutRef<FlowbiteIconProps>
 >((props, ref) => (
@@ -14,4 +14,4 @@ const SvgXCircle = forwardRef<
     />
   </BaseIcon>
 ));
-export default SvgXCircle;
+export default SvgCloseCircle;

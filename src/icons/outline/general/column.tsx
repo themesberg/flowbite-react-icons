@@ -10,7 +10,7 @@ const SvgColumn = forwardRef<SVGSVGElement, PropsWithoutRef<FlowbiteIconProps>>(
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth={2}
-        d="M15 5v14M9 5v14M4 5h16c.6 0 1 .4 1 1v12c0 .6-.4 1-1 1H4a1 1 0 0 1-1-1V6c0-.6.4-1 1-1"
+        d="M15 5v14M9 5v14M4 5h16a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1"
       />
     </BaseIcon>
   ),

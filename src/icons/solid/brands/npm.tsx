@@ -6,7 +6,7 @@ const SvgNpm = forwardRef<SVGSVGElement, PropsWithoutRef<FlowbiteIconProps>>(
   (props, ref) => (
     <BaseIcon fill="currentColor" ref={ref} {...props}>
       <path
-        stroke="#2F3039"
+        stroke="currentColor"
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth={2}

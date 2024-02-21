@@ -19,7 +19,7 @@ const SvgMapPinAlt = forwardRef<
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={2}
-      d="M17.8 14a7 7 0 1 0-11.5 0h0l.2.3.3.3L12 21l5.1-6.2.6-.7.1-.2Z"
+      d="M17.8 13.938h-.011a7 7 0 1 0-11.464.144h-.016l.14.171q.15.19.3.371L12 21l5.13-6.248q.291-.314.54-.659z"
     />
   </BaseIcon>
 ));

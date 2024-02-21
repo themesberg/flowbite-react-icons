@@ -10,7 +10,7 @@ const SvgTablet = forwardRef<SVGSVGElement, PropsWithoutRef<FlowbiteIconProps>>(
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth={2}
-        d="M11 18h2M5.9 3H18c.5 0 .9.4.9 1v16c0 .6-.4 1-.9 1H6c-.5 0-.9-.4-.9-1V4c0-.6.4-1 .9-1Z"
+        d="M11 18h2M5.875 3h12.25c.483 0 .875.448.875 1v16c0 .552-.392 1-.875 1H5.875C5.392 21 5 20.552 5 20V4c0-.552.392-1 .875-1"
       />
     </BaseIcon>
   ),

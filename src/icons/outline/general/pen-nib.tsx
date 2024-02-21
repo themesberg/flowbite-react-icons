@@ -10,7 +10,7 @@ const SvgPenNib = forwardRef<SVGSVGElement, PropsWithoutRef<FlowbiteIconProps>>(
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth={2}
-        d="m5 19 5.4-5.4m2.4-6.4 4 4-2 5.4L5.3 20 4 18.7l3.4-9.5zm4.6 4.6-5.2-5.2L14.8 4 20 9.2z"
+        d="m4.988 19.012 5.41-5.41m2.366-6.424 4.058 4.058-2.03 5.41L5.3 20 4 18.701l3.355-9.494 5.41-2.029Zm4.626 4.625L12.197 6.61 14.807 4 20 9.194z"
       />
     </BaseIcon>
   ),
