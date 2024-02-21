@@ -1,6 +1,6 @@
 export { default as BackwardStep } from "./backward-step";
 export { default as CameraPhoto } from "./camera-photo";
-export { default as Captioning } from "./captioning";
+export { default as Caption } from "./caption";
 export { default as CirclePause } from "./circle-pause";
 export { default as ClapperboardPlay } from "./clapperboard-play";
 export { default as ComputerSpeaker } from "./computer-speaker";
