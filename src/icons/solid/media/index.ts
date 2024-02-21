@@ -11,5 +11,4 @@ export { default as Microphone } from "./microphone";
 export { default as Pause } from "./pause";
 export { default as Play } from "./play";
 export { default as RectangleList } from "./rectangle-list";
-export { default as Shuffle } from "./shuffle";
 export { default as VideoCamera } from "./video-camera";
