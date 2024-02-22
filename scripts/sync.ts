@@ -3,25 +3,27 @@ import path from "path";
 import { $ } from "bun";
 import { rimraf } from "rimraf";
 
-const REPO_NAME = "flowbite-icons";
-const REPO_BRANCH = "main";
-const REPO_URL = "https://github.com/themesberg/flowbite-icons.git";
-const REPO_SVGS_DIR = "src";
+const REPO = {
+  URL: "https://github.com/themesberg/flowbite-icons.git",
+  BRANCH: "main",
+  DIR: "flowbite-icons",
+  ICONS_DIR: "src",
+};
 const ICONS_OUTPUT_DIR = "src/icons";
 
 async function prepare() {
-  console.log(`Prepare: Remove [${REPO_NAME}, ${ICONS_OUTPUT_DIR}] folders`);
-  await rimraf([REPO_NAME, ICONS_OUTPUT_DIR]);
+  console.log(`Prepare: Remove [${REPO.DIR}, ${ICONS_OUTPUT_DIR}] folders`);
+  await rimraf([REPO.DIR, ICONS_OUTPUT_DIR]);
 }
 
 async function cloneRepo() {
-  console.log(`Repo: cloning [${REPO_URL}] into [${REPO_NAME}] folder...`);
-  await $`git clone --depth 1 -b ${REPO_BRANCH} ${REPO_URL} ${REPO_NAME}`.quiet();
+  console.log(`Repo: cloning [${REPO.URL}] into [${REPO.DIR}] folder...`);
+  await $`git clone --depth 1 -b ${REPO.BRANCH} ${REPO.URL} ${REPO.DIR}`.quiet();
 }
 
 async function generateIcons() {
   console.log(`Icons: generating into [${ICONS_OUTPUT_DIR}] folder...`);
-  await $`bun run svgr --out-dir ${ICONS_OUTPUT_DIR} -- ${REPO_NAME}/${REPO_SVGS_DIR}`.quiet();
+  await $`bun run svgr --out-dir ${ICONS_OUTPUT_DIR} -- ${REPO.DIR}/${REPO.ICONS_DIR}`.quiet();
   await replaceSvgWithBaseIcon();
   await createIndexFiles();
 }
@@ -87,8 +89,8 @@ async function formatIcons() {
 }
 
 async function cleanup() {
-  console.log(`Cleanup: remove [${REPO_NAME}] folder`);
-  await rimraf([REPO_NAME]);
+  console.log(`Cleanup: remove [${REPO.DIR}] folder`);
+  await rimraf([REPO.DIR]);
 }
 
 await prepare();
