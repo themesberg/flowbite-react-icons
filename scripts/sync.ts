@@ -11,18 +11,19 @@ const REPO = {
 };
 const ICONS_OUTPUT_DIR = "src/icons";
 
-async function prepare() {
-  console.log(`Prepare: Remove [${REPO.DIR}, ${ICONS_OUTPUT_DIR}] folders`);
-  await rimraf([REPO.DIR, ICONS_OUTPUT_DIR]);
-}
-
 async function cloneRepo() {
-  console.log(`Repo: cloning [${REPO.URL}] into [${REPO.DIR}] folder...`);
+  console.log(`Repo: remove [${REPO.DIR}] folder...`);
+  await rimraf(REPO.DIR);
+  console.log(`Repo: clone [${REPO.URL}] into [${REPO.DIR}] folder...`);
   await $`git clone --depth 1 -b ${REPO.BRANCH} ${REPO.URL} ${REPO.DIR}`.quiet();
 }
 
 async function generateIcons() {
-  console.log(`Icons: generating into [${ICONS_OUTPUT_DIR}] folder...`);
+  console.log(`Icons: remove [${ICONS_OUTPUT_DIR}] folder...`);
+  await rimraf(ICONS_OUTPUT_DIR);
+  console.log(
+    `Icons: generate from [${REPO.DIR}/${REPO.ICONS_DIR}] folder into [${ICONS_OUTPUT_DIR}] folder...`,
+  );
   await $`bun run svgr --out-dir ${ICONS_OUTPUT_DIR} -- ${REPO.DIR}/${REPO.ICONS_DIR}`.quiet();
   await replaceSvgWithBaseIcon();
   await createIndexFiles();
@@ -84,16 +85,15 @@ async function readFiles(
 }
 
 async function formatIcons() {
-  console.log(`Format: formatting [${ICONS_OUTPUT_DIR}] folder...`);
+  console.log(`Format: format [${ICONS_OUTPUT_DIR}] folder...`);
   await $`bun run prettier ${ICONS_OUTPUT_DIR} --write`.quiet();
 }
 
 async function cleanup() {
-  console.log(`Cleanup: remove [${REPO.DIR}] folder`);
-  await rimraf([REPO.DIR]);
+  console.log(`Cleanup: remove [${REPO.DIR}] folder...`);
+  await rimraf(REPO.DIR);
 }
 
-await prepare();
 await cloneRepo();
 await generateIcons();
 await formatIcons();
