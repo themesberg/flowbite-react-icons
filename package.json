@@ -58,6 +58,7 @@
     "@svgr/cli": "8.1.0",
     "@types/bun": "1.0.6",
     "@types/react": "18.2.57",
+    "ora": "8.0.1",
     "prettier": "3.2.5",
     "prettier-plugin-packagejson": "2.4.11",
     "rimraf": "5.0.5",

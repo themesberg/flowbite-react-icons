@@ -1,6 +1,7 @@
 import fs from "node:fs/promises";
 import path from "path";
 import { $ } from "bun";
+import ora from "ora";
 import { rimraf } from "rimraf";
 
 const REPO = {
@@ -12,21 +13,29 @@ const REPO = {
 const ICONS_OUTPUT_DIR = "src/icons";
 
 async function cloneRepo() {
-  console.log(`Repo: remove [${REPO.DIR}] folder...`);
+  const cleanup = ora(`Repo: remove [${REPO.DIR}] folder...`).start();
   await rimraf(REPO.DIR);
-  console.log(`Repo: clone [${REPO.URL}] into [${REPO.DIR}] folder...`);
+  cleanup.succeed();
+
+  const clone = ora(
+    `Repo: clone [${REPO.URL}] into [${REPO.DIR}] folder...`,
+  ).start();
   await $`git clone --depth 1 -b ${REPO.BRANCH} ${REPO.URL} ${REPO.DIR}`.quiet();
+  clone.succeed();
 }
 
 async function generateIcons() {
-  console.log(`Icons: remove [${ICONS_OUTPUT_DIR}] folder...`);
+  const cleanup = ora(`Icons: remove [${ICONS_OUTPUT_DIR}] folder...`).start();
   await rimraf(ICONS_OUTPUT_DIR);
-  console.log(
+  cleanup.succeed();
+
+  const generate = ora(
     `Icons: generate from [${REPO.DIR}/${REPO.ICONS_DIR}] folder into [${ICONS_OUTPUT_DIR}] folder...`,
-  );
+  ).start();
   await $`bun run svgr --out-dir ${ICONS_OUTPUT_DIR} -- ${REPO.DIR}/${REPO.ICONS_DIR}`.quiet();
   await replaceSvgWithBaseIcon();
   await createIndexFiles();
+  generate.succeed();
 }
 
 async function replaceSvgWithBaseIcon() {
@@ -85,13 +94,15 @@ async function readFiles(
 }
 
 async function formatIcons() {
-  console.log(`Format: format [${ICONS_OUTPUT_DIR}] folder...`);
+  const format = ora(`Format: format [${ICONS_OUTPUT_DIR}] folder...`).start();
   await $`bun run prettier ${ICONS_OUTPUT_DIR} --write`.quiet();
+  format.succeed();
 }
 
 async function cleanup() {
-  console.log(`Cleanup: remove [${REPO.DIR}] folder...`);
+  const cleanup = ora(`Cleanup: remove [${REPO.DIR}] folder...`).start();
   await rimraf(REPO.DIR);
+  cleanup.succeed();
 }
 
 await cloneRepo();
