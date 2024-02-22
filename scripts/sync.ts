@@ -4,6 +4,7 @@ import { $ } from "bun";
 import { rimraf } from "rimraf";
 
 const REPO_NAME = "flowbite-icons";
+const REPO_BRANCH = "main";
 const REPO_URL = "https://github.com/themesberg/flowbite-icons.git";
 const REPO_SVGS_DIR = "src";
 const ICONS_OUTPUT_DIR = "src/icons";
@@ -15,7 +16,7 @@ async function prepare() {
 
 async function cloneRepo() {
   console.log(`Repo: cloning [${REPO_URL}] into [${REPO_NAME}] folder...`);
-  await $`git clone ${REPO_URL} ${REPO_NAME}`.quiet();
+  await $`git clone --depth 1 -b ${REPO_BRANCH} ${REPO_URL} ${REPO_NAME}`.quiet();
 }
 
 async function generateIcons() {
