@@ -28,6 +28,7 @@ export { default as ChartLineDown } from "./chart-line-down";
 export { default as ChartLineUp } from "./chart-line-up";
 export { default as ChartMixedDollar } from "./chart-mixed-dollar";
 export { default as ChartMixed } from "./chart-mixed";
+export { default as ChartPie } from "./chart-pie";
 export { default as Chart } from "./chart";
 export { default as CheckCircle } from "./check-circle";
 export { default as CheckPlusCircle } from "./check-plus-circle";
