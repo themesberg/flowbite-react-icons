@@ -56,14 +56,14 @@
   "devDependencies": {
     "@ianvs/prettier-plugin-sort-imports": "4.1.1",
     "@svgr/cli": "8.1.0",
-    "@types/bun": "1.0.7",
-    "@types/react": "18.2.60",
+    "@types/bun": "1.0.8",
+    "@types/react": "18.2.65",
     "ora": "8.0.1",
     "prettier": "3.2.5",
     "prettier-plugin-packagejson": "2.4.12",
     "rimraf": "5.0.5",
     "tsup": "8.0.2",
-    "typescript": "5.3.3"
+    "typescript": "5.4.2"
   },
   "peerDependencies": {
     "react": ">=16",
