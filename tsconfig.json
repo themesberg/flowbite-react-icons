@@ -14,10 +14,10 @@
     "skipLibCheck": true,
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true,
-    "downlevelIteration": true,
-    "sourceMap": true,
-    "outDir": "./dist",
-    "jsx": "react-jsx"
-  },
-  "exclude": ["**/node_modules"]
+    "jsx": "react-jsx",
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./src/*"]
+    }
+  }
 }

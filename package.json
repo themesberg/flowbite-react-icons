@@ -1,7 +1,42 @@
 {
   "name": "flowbite-react-icons",
-  "version": "0.0.1",
+  "version": "1.0.3",
   "description": "Official Flowbite Icons library for React",
+  "keywords": [
+    "flowbite",
+    "react",
+    "icons",
+    "svg"
+  ],
+  "homepage": "https://github.com/themesberg/flowbite-react-icons#readme",
+  "bugs": "https://github.com/themesberg/flowbite-react-icons/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/themesberg/flowbite-react-icons.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Sutu Sebastian",
+    "email": "sebastian.sutu@stainless-code.com",
+    "url": "https://github.com/SutuSebastian"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
+    "./outline": {
+      "types": "./dist/icons/outline/index.d.ts",
+      "import": "./dist/icons/outline/index.mjs",
+      "require": "./dist/icons/outline/index.js"
+    },
+    "./solid": {
+      "types": "./dist/icons/solid/index.d.ts",
+      "import": "./dist/icons/solid/index.mjs",
+      "require": "./dist/icons/solid/index.js"
+    }
+  },
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -9,38 +44,44 @@
     "dist"
   ],
   "scripts": {
-    "build": "pnpm clean && tsup src/index.ts --format esm,cjs --dts",
-    "clean": "rm -rf dist",
+    "build": "tsup",
+    "clean": "rimraf dist node_modules",
+    "dev": "tsup --watch",
+    "format": "prettier . --write",
+    "format:check": "prettier .",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "prepack": "clean-package",
+    "postpack": "clean-package restore",
+    "release": "changeset publish",
+    "sync": "bun run scripts/sync.ts",
     "typecheck": "tsc",
-    "format": "prettier --write ."
+    "version": "changeset version"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/themesberg/flowbite-react-icons.git"
-  },
-  "keywords": [
-    "flowbite",
-    "react",
-    "icons",
-    "svg"
-  ],
-  "author": {
-    "name": "Sutu Sebastian",
-    "email": "sebastian.sutu@stainless-code.com",
-    "url": "https://github.com/SutuSebastian"
-  },
-  "license": "MIT",
-  "bugs": "https://github.com/themesberg/flowbite-react-icons/issues",
-  "homepage": "https://github.com/themesberg/flowbite-react-icons#readme",
   "devDependencies": {
-    "@types/react": "^18.2.38",
-    "prettier": "^3.1.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "tsup": "^8.0.1",
-    "typescript": "^5.3.2"
+    "@changesets/changelog-github": "0.5.0",
+    "@changesets/cli": "2.27.1",
+    "@ianvs/prettier-plugin-sort-imports": "4.2.1",
+    "@svgr/cli": "8.1.0",
+    "@types/bun": "1.0.8",
+    "@types/react": "18.2.66",
+    "clean-package": "2.2.0",
+    "ora": "8.0.1",
+    "prettier": "3.2.5",
+    "prettier-plugin-packagejson": "2.4.12",
+    "rimraf": "5.0.5",
+    "tsup": "8.0.2",
+    "typescript": "5.4.2"
   },
   "peerDependencies": {
-    "react": "^16.0.0 || ^17.0.0 || ^18.0.0"
+    "react": ">=16",
+    "react-dom": ">=16"
+  },
+  "clean-package": {
+    "remove": [
+      "scripts",
+      "devDependencies",
+      "clean-package"
+    ]
   }
 }
