@@ -46,6 +46,7 @@
   "scripts": {
     "build": "tsup",
     "clean": "rimraf dist node_modules",
+    "dev": "tsup --watch",
     "format": "prettier . --write",
     "format:check": "prettier .",
     "lint": "eslint .",
