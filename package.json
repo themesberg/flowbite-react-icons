@@ -23,24 +23,24 @@
   "type": "module",
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
+      "require": "./dist/cjs/index.cjs",
       "import": "./dist/esm/index.mjs",
-      "require": "./dist/cjs/index.cjs"
+      "types": "./dist/types/index.d.ts"
     },
     "./outline": {
-      "types": "./dist/icons/outline/index.d.ts",
+      "require": "./dist/cjs/icons/outline/index.cjs",
       "import": "./dist/esm/icons/outline/index.mjs",
-      "require": "./dist/cjs/icons/outline/index.cjs"
+      "types": "./dist/types/icons/outline/index.d.ts"
     },
     "./solid": {
-      "types": "./dist/icons/solid/index.d.ts",
+      "require": "./dist/cjs/icons/solid/index.cjs",
       "import": "./dist/esm/icons/solid/index.mjs",
-      "require": "./dist/cjs/icons/solid/index.cjs"
+      "types": "./dist/types/icons/solid/index.d.ts"
     }
   },
   "main": "./dist/cjs/index.cjs",
   "module": "./dist/esm/index.mjs",
-  "types": "./dist/index.d.ts",
+  "types": "./dist/types/index.d.ts",
   "files": [
     "dist"
   ],
@@ -73,6 +73,7 @@
     "prettier-plugin-packagejson": "2.4.12",
     "rimraf": "5.0.5",
     "rollup": "4.13.0",
+    "rollup-plugin-dts": "6.1.0",
     "rollup-plugin-esbuild": "6.1.1",
     "rollup-plugin-use-client": "1.4.0",
     "typescript": "5.4.2"
