@@ -11,10 +11,10 @@ npm i flowbite-react-icons
 # yarn
 yarn add flowbite-react-icons
 
-#pnpm
+# pnpm
 pnpm add flowbite-react-icons
 
-#bun
+# bun
 bun add flowbite-react-icons
 ```
 
