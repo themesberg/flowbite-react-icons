@@ -49,7 +49,7 @@
     "clean": "rimraf dist node_modules",
     "dev": "rollup -c --watch",
     "format": "prettier . --write",
-    "format:check": "prettier .",
+    "format:check": "prettier . --check",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "prepack": "clean-package",
