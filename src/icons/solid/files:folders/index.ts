@@ -1,5 +1,6 @@
 export { default as ArchiveArrowDown } from "./archive-arrow-down";
 export { default as ClipboardCheck } from "./clipboard-check";
+export { default as ClipboardClean } from "./clipboard-clean";
 export { default as ClipboardList } from "./clipboard-list";
 export { default as Clipboard } from "./clipboard";
 export { default as FileChartBar } from "./file-chart-bar";
@@ -10,6 +11,7 @@ export { default as FileCode } from "./file-code";
 export { default as FileCopyAlt } from "./file-copy-alt";
 export { default as FileCopy } from "./file-copy";
 export { default as FileCsv } from "./file-csv";
+export { default as FileDoc } from "./file-doc";
 export { default as FileExport } from "./file-export";
 export { default as FileImage } from "./file-image";
 export { default as FileImport } from "./file-import";
