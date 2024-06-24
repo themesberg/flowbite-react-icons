@@ -5,8 +5,6 @@ import type { FlowbiteIconProps } from "../types";
 export const BaseIcon = forwardRef<SVGSVGElement, FlowbiteIconProps>(
   (props, ref) => {
     const {
-      xmlns = "http://www.w3.org/2000/svg",
-      viewBox = "0 0 24 24",
       width,
       height,
       // custom
@@ -35,8 +33,6 @@ export const BaseIcon = forwardRef<SVGSVGElement, FlowbiteIconProps>(
     return (
       <svg
         ref={ref}
-        xmlns={xmlns}
-        viewBox={viewBox}
         width={width ?? size ?? theme.width ?? theme.size}
         height={height ?? size ?? theme.height ?? theme.size}
         {...mergedProps}
