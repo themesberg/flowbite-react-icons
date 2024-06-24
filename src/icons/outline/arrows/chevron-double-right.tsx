@@ -11,7 +11,6 @@ const SvgChevronDoubleRight = forwardRef<
       stroke="currentColor"
       strokeLinecap="round"
       strokeLinejoin="round"
-      strokeWidth={2}
       d="m7 16 4-4-4-4m6 8 4-4-4-4"
     />
   </BaseIcon>

@@ -11,7 +11,6 @@ const SvgChevronUp = forwardRef<
       stroke="currentColor"
       strokeLinecap="round"
       strokeLinejoin="round"
-      strokeWidth={2}
       d="m16 14-4-4-4 4"
     />
   </BaseIcon>

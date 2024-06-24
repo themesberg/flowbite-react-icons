@@ -9,7 +9,6 @@ const SvgPlus = forwardRef<SVGSVGElement, PropsWithoutRef<FlowbiteIconProps>>(
         stroke="currentColor"
         strokeLinecap="round"
         strokeLinejoin="round"
-        strokeWidth={2}
         d="M5 12h14m-7 7V5"
       />
     </BaseIcon>

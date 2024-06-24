@@ -12,7 +12,6 @@ const SvgStop = forwardRef<SVGSVGElement, PropsWithoutRef<FlowbiteIconProps>>(
         y={6}
         stroke="currentColor"
         strokeLinejoin="round"
-        strokeWidth={2}
         rx={1}
       />
     </BaseIcon>
