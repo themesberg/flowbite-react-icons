@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.sb-show-main {
+  @apply dark:bg-zinc-800 dark:text-white;
+}
