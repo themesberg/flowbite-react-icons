@@ -11,7 +11,6 @@ const SvgChevronSort = forwardRef<
       stroke="currentColor"
       strokeLinecap="round"
       strokeLinejoin="round"
-      strokeWidth={2}
       d="m8 15 4 4 4-4m0-6-4-4-4 4"
     />
   </BaseIcon>

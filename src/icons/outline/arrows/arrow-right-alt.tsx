@@ -11,7 +11,6 @@ const SvgArrowRightAlt = forwardRef<
       stroke="currentColor"
       strokeLinecap="round"
       strokeLinejoin="round"
-      strokeWidth={2}
       d="M16.153 19 21 12l-4.847-7H3l4.848 7L3 19z"
     />
   </BaseIcon>

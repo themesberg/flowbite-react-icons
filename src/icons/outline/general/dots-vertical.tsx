@@ -10,7 +10,6 @@ const SvgDotsVertical = forwardRef<
     <path
       stroke="currentColor"
       strokeLinecap="round"
-      strokeWidth={3}
       d="M12 6h.01M12 12h.01M12 18h.01"
     />
   </BaseIcon>

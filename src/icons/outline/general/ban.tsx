@@ -8,7 +8,6 @@ const SvgBan = forwardRef<SVGSVGElement, PropsWithoutRef<FlowbiteIconProps>>(
       <path
         stroke="currentColor"
         strokeLinecap="round"
-        strokeWidth={2}
         d="m6 6 12 12m3-6a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
       />
     </BaseIcon>

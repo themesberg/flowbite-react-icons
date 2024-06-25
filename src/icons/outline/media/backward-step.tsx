@@ -11,7 +11,6 @@ const SvgBackwardStep = forwardRef<
       stroke="currentColor"
       strokeLinecap="round"
       strokeLinejoin="round"
-      strokeWidth={2}
       d="M8 6v12m8-12v12l-8-6z"
     />
   </BaseIcon>

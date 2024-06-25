@@ -9,7 +9,6 @@ const SvgRedo = forwardRef<SVGSVGElement, PropsWithoutRef<FlowbiteIconProps>>(
         stroke="currentColor"
         strokeLinecap="round"
         strokeLinejoin="round"
-        strokeWidth={2}
         d="M21 9H8a5 5 0 0 0 0 10h9m4-10-4-4m4 4-4 4"
       />
     </BaseIcon>

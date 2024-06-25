@@ -11,7 +11,6 @@ const SvgAngleDown = forwardRef<
       stroke="currentColor"
       strokeLinecap="round"
       strokeLinejoin="round"
-      strokeWidth={2}
       d="m19 9-7 7-7-7"
     />
   </BaseIcon>

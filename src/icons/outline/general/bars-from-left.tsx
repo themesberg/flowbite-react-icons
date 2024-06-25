@@ -10,7 +10,6 @@ const SvgBarsFromLeft = forwardRef<
     <path
       stroke="currentColor"
       strokeLinecap="round"
-      strokeWidth={2}
       d="M5 7h14M5 12h14M5 17h10"
     />
   </BaseIcon>

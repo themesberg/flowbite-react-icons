@@ -9,7 +9,6 @@ const SvgNpm = forwardRef<SVGSVGElement, PropsWithoutRef<FlowbiteIconProps>>(
         stroke="currentColor"
         strokeLinecap="round"
         strokeLinejoin="round"
-        strokeWidth={2}
         d="M12 3.87H4v16h8v-13h5v13h3v-16z"
       />
     </BaseIcon>

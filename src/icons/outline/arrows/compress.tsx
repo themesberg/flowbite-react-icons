@@ -11,7 +11,6 @@ const SvgCompress = forwardRef<
       stroke="currentColor"
       strokeLinecap="round"
       strokeLinejoin="round"
-      strokeWidth={2}
       d="M4 8h4V4m12 4h-4V4M4 16h4v4m12-4h-4v4"
     />
   </BaseIcon>

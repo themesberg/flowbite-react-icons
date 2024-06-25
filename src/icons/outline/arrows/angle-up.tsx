@@ -11,7 +11,6 @@ const SvgAngleUp = forwardRef<
       stroke="currentColor"
       strokeLinecap="round"
       strokeLinejoin="round"
-      strokeWidth={2}
       d="m5 15 7-7 7 7"
     />
   </BaseIcon>

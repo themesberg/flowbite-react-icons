@@ -11,7 +11,6 @@ const SvgOutdent = forwardRef<
       stroke="currentColor"
       strokeLinecap="round"
       strokeLinejoin="round"
-      strokeWidth={2}
       d="M6 6h12M6 18h12m-5-8h5m-5 4h5M9.5 9v6L6 12z"
     />
   </BaseIcon>

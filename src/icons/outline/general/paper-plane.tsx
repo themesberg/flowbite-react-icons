@@ -11,7 +11,6 @@ const SvgPaperPlane = forwardRef<
       stroke="currentColor"
       strokeLinecap="round"
       strokeLinejoin="round"
-      strokeWidth={2}
       d="m12 18-7 3 7-18 7 18zm0 0v-5"
     />
   </BaseIcon>

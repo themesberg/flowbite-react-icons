@@ -9,7 +9,6 @@ const SvgMinus = forwardRef<SVGSVGElement, PropsWithoutRef<FlowbiteIconProps>>(
         stroke="currentColor"
         strokeLinecap="round"
         strokeLinejoin="round"
-        strokeWidth={2}
         d="M5 12h14"
       />
     </BaseIcon>

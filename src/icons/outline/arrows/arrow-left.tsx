@@ -11,7 +11,6 @@ const SvgArrowLeft = forwardRef<
       stroke="currentColor"
       strokeLinecap="round"
       strokeLinejoin="round"
-      strokeWidth={2}
       d="M5 12h14M5 12l4-4m-4 4 4 4"
     />
   </BaseIcon>

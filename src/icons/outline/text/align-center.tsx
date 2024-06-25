@@ -11,7 +11,6 @@ const SvgAlignCenter = forwardRef<
       stroke="currentColor"
       strokeLinecap="round"
       strokeLinejoin="round"
-      strokeWidth={2}
       d="M8 6h8M6 10h12M8 14h8M6 18h12"
     />
   </BaseIcon>

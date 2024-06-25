@@ -9,7 +9,6 @@ const SvgPlay = forwardRef<SVGSVGElement, PropsWithoutRef<FlowbiteIconProps>>(
         stroke="currentColor"
         strokeLinecap="round"
         strokeLinejoin="round"
-        strokeWidth={2}
         d="M8 18V6l8 6z"
       />
     </BaseIcon>

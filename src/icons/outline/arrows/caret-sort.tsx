@@ -11,7 +11,6 @@ const SvgCaretSort = forwardRef<
       stroke="currentColor"
       strokeLinecap="round"
       strokeLinejoin="round"
-      strokeWidth={2}
       d="m8 10 4-6 4 6zm8 4-4 6-4-6z"
     />
   </BaseIcon>
