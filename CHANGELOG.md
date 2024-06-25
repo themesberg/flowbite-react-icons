@@ -1,5 +1,11 @@
 # flowbite-react-icons
 
+## 1.0.8
+
+### Patch Changes
+
+- [#8](https://github.com/themesberg/flowbite-react-icons/pull/8) [`4f4905e`](https://github.com/themesberg/flowbite-react-icons/commit/4f4905e3eeed6a7d68997463d46ec62479a51a2f) Thanks [@SutuSebastian](https://github.com/SutuSebastian)! - allow `strokeWidth` management from within the icon itself + `FlowbiteIcons` context
+
 ## 1.0.7
 
 ### Patch Changes
