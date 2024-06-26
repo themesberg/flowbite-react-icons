@@ -58,14 +58,10 @@ const ICONS = OUTLINE.concat(SOLID).sort((a, b) => {
 });
 
 export const All: Story = {
-  render: (args) => (
-    <FlowbiteIcons {...args}>
-      <Icons />
-    </FlowbiteIcons>
-  ),
+  render: (args) => <Icons {...args} />,
 };
 
-function Icons() {
+function Icons(args: object) {
   const [search, setSearch] = useState("");
 
   const icons = search.trim().length
@@ -75,19 +71,21 @@ function Icons() {
     : ICONS;
 
   return (
-    <div className="grid gap-8">
-      <SearchInput value={search} onChange={setSearch} />
-      <Grid>
-        {icons.map(({ name, style, icon: Icon }) => (
-          <Container key={`${style}-${name}`} title={name}>
-            <Card>
-              <Icon />
-            </Card>
-            <Name>{name}</Name>
-          </Container>
-        ))}
-      </Grid>
-    </div>
+    <FlowbiteIcons {...args}>
+      <div className="grid gap-8">
+        <SearchInput value={search} onChange={setSearch} />
+        <Grid>
+          {icons.map(({ name, style, icon: Icon }) => (
+            <Container key={`${style}-${name}`} title={name}>
+              <Card>
+                <Icon />
+              </Card>
+              <Name>{name}</Name>
+            </Container>
+          ))}
+        </Grid>
+      </div>
+    </FlowbiteIcons>
   );
 }
 
