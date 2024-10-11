@@ -1,11 +1,14 @@
 export { default as CartPlusAlt } from "./cart-plus-alt";
 export { default as CartPlus } from "./cart-plus";
 export { default as Cart } from "./cart";
+export { default as CashRegister } from "./cash-register";
 export { default as Cash } from "./cash";
+export { default as CreditCardPlusAlt } from "./credit-card-plus-alt";
 export { default as CreditCardPlus } from "./credit-card-plus";
 export { default as CreditCard } from "./credit-card";
 export { default as Dollar } from "./dollar";
 export { default as Euro } from "./euro";
+export { default as FilterDollar } from "./filter-dollar";
 export { default as Receipt } from "./receipt";
 export { default as SalePercent } from "./sale-percent";
 export { default as ScaleBalanced } from "./scale-balanced";
