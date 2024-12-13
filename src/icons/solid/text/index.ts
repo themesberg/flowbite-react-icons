@@ -1,3 +1,4 @@
+export { default as FontColorAlt } from "./font-color-alt";
 export { default as Indent } from "./indent";
 export { default as Outdent } from "./outdent";
 export { default as Paragraph } from "./paragraph";

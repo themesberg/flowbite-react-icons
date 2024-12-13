@@ -1,5 +1,11 @@
 # flowbite-react-icons
 
+## 1.1.0
+
+### Minor Changes
+
+- [#10](https://github.com/themesberg/flowbite-react-icons/pull/10) [`511bd85`](https://github.com/themesberg/flowbite-react-icons/commit/511bd85bd764bfc405fe56a39cfce1f9c1368d1e) Thanks [@SutuSebastian](https://github.com/SutuSebastian)! - sync icons with release [v1.3.0](https://github.com/themesberg/flowbite-icons/releases/tag/v1.3.0)
+
 ## 1.0.8
 
 ### Patch Changes
