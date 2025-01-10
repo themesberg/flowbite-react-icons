@@ -1,5 +1,6 @@
 export * from "./arrows";
 export * from "./e-commerce";
+export * from "./education";
 export * from "./emoji";
 export * from "./files:folders";
 export * from "./general";
