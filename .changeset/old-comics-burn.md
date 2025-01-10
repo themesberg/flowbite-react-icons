@@ -2,4 +2,4 @@
 "flowbite-react-icons": minor
 ---
 
-sync icons with release [v1.4.0](https://github.com/themesberg/flowbite-icons/releases/tag/v1.4.0]
+sync icons with release [v1.4.0](https://github.com/themesberg/flowbite-icons/releases/tag/v1.4.0)
