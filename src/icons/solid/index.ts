@@ -4,6 +4,7 @@ export * from "./e-commerce";
 export * from "./education";
 export * from "./emoji";
 export * from "./files:folders";
+export * from "./food:beverage";
 export * from "./general";
 export * from "./media";
 export * from "./text";
