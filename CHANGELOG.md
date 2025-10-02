@@ -1,5 +1,11 @@
 # flowbite-react-icons
 
+## 1.3.1
+
+### Patch Changes
+
+- [#17](https://github.com/themesberg/flowbite-react-icons/pull/17) [`935771e`](https://github.com/themesberg/flowbite-react-icons/commit/935771e91417f56eaf056e87be8a36d69e848a05) Thanks [@SutuSebastian](https://github.com/SutuSebastian)! - update `FlowbiteIconProps` `size` type to accept `string` or `number`
+
 ## 1.3.0
 
 ### Minor Changes
